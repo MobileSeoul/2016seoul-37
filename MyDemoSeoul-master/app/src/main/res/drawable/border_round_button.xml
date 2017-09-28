@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 배경은 투명하고, Border 부분만 색상이 있는 Round 형태 타입으로 만든다.-->
+    <!-- 기본 색상 FF999999-->
+    <!-- 평상시 -->
+    <item android:state_focused="false" android:state_pressed="false">
+        <shape>
+            <solid android:color="#00ffffff" />
+            <corners android:radius="20dp" />
+            <stroke
+                android:width="1dip"
+                android:color="#FF00A0FF" />
+        </shape>
+    </item>
+
+    <!-- 클릭했을 때 -->
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <solid android:color="#00ffffff" />
+            <corners android:radius="20dp" />
+            <stroke
+                android:width="1dip"
+                android:color="#FF000AFF" />
+        </shape>
+    </item>
+
+</selector>

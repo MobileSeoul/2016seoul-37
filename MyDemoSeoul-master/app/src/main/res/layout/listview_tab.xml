@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/view1"
+        android:background="@color/red"
+        android:text="첫번째 탭 화면" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/view2"
+        android:background="@color/blue"
+        android:text="두번째 탭 화면" />
+</FrameLayout>

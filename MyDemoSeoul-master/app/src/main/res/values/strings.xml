@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">서울?여긴?</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="selected_place">Last Selected Place:</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="intro_message">
+        <![CDATA[
+            [현재버전]\n
+            !서울?여긴?! 앱 사용에 제한적 사용 및 버그가 발생할수있습니다.\n
+            해당 앱을 더욱 발전시키도록 노력하겠습니다.\n\n
+
+            [향후 업데이트 예정]\n
+            1. 주소 기반 검색 기능 \n
+            2. 위치 계산 고도화 \n
+            3. 명소 공유시 다양한 정보 제공 \n
+            4. 사용자 정보 관리 고도화 \n
+
+
+        ]]>
+    </string>
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">로그인</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">로그아웃</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+
+    <string name="emailpassword_status_fmt">Email User: %s</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+
+
+    <!-- Activity Titles -->
+
+    <string name="title_activity_search_rst1">검색결과</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="title_activity_sigin_in">로그인</string>
+    <string name="title_activity_share_reg">명소 공유</string>
+    <string name="title_activity_plan_sts">여행 계획</string>
+    <string name="title_activity_search_det">상세 보기</string>
+    <string name="title_activity_search_det_maps">상세 지도 보기</string>
+
+
+    <!-- Common -->
+    <string name="common_information">알림</string>
+    <string name="common_loading_error">정보를 불러오는 중 오류가 발생했습니다. 다시 확인해주세요.</string>
+
+
+    <!-- SingIn -->
+    <string name="sigin_in_sigin_up_failed">비밀번호는 6자리 이상으로 작성해 주세요.</string>
+    <string name="sigin_in_sigin_failed">로그인에 실패하였습니다. 아이디 또는 비밀번호를 확인해주세요.</string>
+
+    <!-- SearchRst1 Activity -->
+    <string name="search_rst_progress_title">잠시만 기다려주세요.</string>
+    <string name="search_rst_progress_content_map">경로를 검색하고 있습니다.</string>
+    <string name="search_rst_progress_content_place">주변명소를 찾고 있습니다.</string>
+    <string name="search_rst_list_not_found">반경내에 더이상 명소가 존재하지 않습니다. 반경 범위를 넓히시면 더 많은 명소가 보입니다.</string>
+
+
+    <string name="search_rst_planed_place_not_found">여행계획에 등록한 명소가 존재 하지 않습니다.</string>   <!--Main, SearchRst, Maps, ShareReg에서 사용-->
+
+    <string name="search_rst_plan_register_success">여행계획에 명소가 등록되었습니다.</string>
+
+    <string name="search_rst_direction_not_found">구글로부터 경로를 찾지 못했습니다. 출도착지 다시 설정해주세요.</string>
+
+
+    <!-- Dialog Title -->
+    <!-- Plan 등록 타이틀 -->
+    <string name="plan_registration_dialog_title">명소 등록</string>
+    <string name="plan_registration_dialog_content">명소를 등록 하시겠습니까?</string>
+    <!-- Plan 확인 타이틀 -->
+    <string name="plan_show_dialog_title">명소 확인</string>
+    <string name="plan_show_dialog_content">여행계획에 등록한 명소를 확인 하시겠습니까?</string>
+
+    <!-- Sigin -->
+    <string name="sigin_in_inform">
+        [테스트 계정 제공]\n
+        심사 평가 시 명소공유 기능을 위한 테스트 계정을 제공합니다.\n
+        가입을 원하지 않으시면 아래 계정중 한개로 로그인 해주세요\n\n
+        test@gmail.com/12345678\n
+        test1@gmail.com/123456\n
+        test2@gmail.com/123456\n
+        test3@gmail.com/123456\n
+
+
+    </string>
+
+    <!-- ShareReg Activity -->
+    <string name="place_register_dialog_title">명소 공유</string>
+    <string name="place_register_dialog_content">명소를 공유하겠습니까</string>
+
+    <string name="share_reg_address_not_found">해당 주소를 찾지 못했습니다.</string>
+    <string name="share_reg_input_address">주소를 입력하세요.</string>
+
+    <string name="share_reg_find_button_not_clicked">위치 찾기 버튼을 클릭하여, 위치를 확인하세요.</string>
+
+    <string name="share_reg_not_found_position">위치 정보를 찾을 수 없습니다. 위치기능을 확인 해주세요.</string>
+    <string name="share_reg_restriction_load_gallery">해당 기능은 향후 지원할 예정입니다.</string>
+    <string name="share_reg_restriction_multiple_camera">여러장 업로드 기능은 향후 지원할 예정입니다.</string>
+
+
+    <!-- ShareDet -->
+    <string name="share_det_restriction_vote">평가하기 기능은 향후 지원할 예정입니다.</string>
+    <string name="share_det_restriction_reply">댓글 기능은 향후 지원할 예정입니다.</string>
+
+    <!--Main -->
+    <string name="main1_img_desc">한국최초의 전용극장을 한번 구경하세요</string>
+    <string name="main2_img_desc">연극 킬 미 나우 공연 중 관객에게 다이빙 한곳!</string>
+    <string name="main3_img_desc">청계천의 역사와 문화를 배워보세요</string>
+
+    <string name="main_login">로그인을 해주세요.</string>
+    <string name="main_not_seoul">서울 특별시가 아닙니다. 장소를 다시 확인하세요.</string>
+    <string name="main_restriction_find">현재 장소기반 검색만 가능하며, 주소 기반 검색은 향후 지원할 예정입니다.</string>
+
+</resources>

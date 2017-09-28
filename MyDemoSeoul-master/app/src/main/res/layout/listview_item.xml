@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:textColor="#fff"
+        android:text="치킨"
+        android:textSize="21dp"
+        android:id="@+id/text"
+        android:gravity="center"/>
+</RelativeLayout>

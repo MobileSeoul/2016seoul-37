@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_new_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFFFF"
+    tools:context="com.example.jjw.mydemo.SearchDetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >          <!-- 뷰 페이퍼 아래에 위치 하도록 설정 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 뷰페이퍼 정의 -->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"/>
+            </LinearLayout>
+
+        <!-- 버튼들 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="10dp">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평가하기"
+                    android:id="@+id/btnSearchDetRate"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@android:drawable/star_off"
+                    android:background="@drawable/border_rectangle_transparent_button"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공유하기"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/btnSearchDetShare"
+                    android:drawableLeft="@android:drawable/ic_menu_share"
+                    android:background="@drawable/border_rectangle_transparent_button"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세지도"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnSearchDetMap"
+                    android:drawableLeft="@android:drawable/ic_menu_mapmode"
+                    android:background="@drawable/border_rectangle_transparent_button"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1.5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="Large Text"
+                        android:textSize="13dp"
+                        android:id="@+id/txtSearchDetPlaceName"
+                        android:layout_weight="0.24"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="Large Text"
+                        android:textSize="10dp"
+                        android:id="@+id/txtSearchDetAddrContent"
+                        android:layout_weight="0.24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dialog_ratingbar" android:layout_gravity="left|center"
+                        android:numStars="5" android:stepSize="1.0" android:rating="2"
+                        android:isIndicator="false"
+                        style="?android:attr/ratingBarStyleSmall"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="(1/5)"
+                        android:textColor="#0000ff"
+                        android:id="@+id/txtSearchDetRating"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <!-- 븐류 -->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="분류"
+                    android:textColor="@color/desc_title"
+                    android:id="@+id/txtSearchDetCodeName" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetCodeNameContent" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 기타사항 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="기타사항"
+                    android:id="@+id/txtSearchDetEtc_Desc"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtSearchDetEtc_DescContent" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 객석수 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="객석 수"
+                    android:id="@+id/txtSearchDetSeat_Cnt"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetSeat_CntContent" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                    <!-- 전화번호 -->
+                    <TextView
+                        android:layout_width="@dimen/search_det_detail_content_width"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="전화 번호"
+                        android:id="@+id/txtSearchDetPhne"
+                        android:textColor="@color/desc_title" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:id="@+id/txtSearchDetEtc_DescPhneContent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 관람시간 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="관람시간"
+                    android:id="@+id/txtSearchDetOpenhour"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetOpenhourContent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                    <!-- 무료 구분 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="무료 구분"
+                    android:id="@+id/txtSearchDetEntrfree"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetEntrfreeContent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 관람료 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="관람료"
+                    android:id="@+id/txtSearchDetEntr_Fee"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetEntr_FeeContent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 휴관일 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="휴관일"
+                    android:id="@+id/txtSearchDetCloseday"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetClosedayContent" />
+          </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 개관일자 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="개관 시간"
+                    android:id="@+id/txtSearchDetOpen_Day"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetOpen_DayContent" />
+
+            </LinearLayout>
+                    <!-- 주소 -->
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="● 주소 ●"
+                        android:id="@+id/txtSearchDetAddr"
+                        android:textColor="#0000ff" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/txtSearchDetAddrContent" />-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginBottom="@dimen/search_det_linear_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 홈페이지 -->
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="홈페이지"
+                    android:id="@+id/txtSearchDetHomepage"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:id="@+id/txtSearchDetHomepageContent" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="댓글 보기"
+                android:id="@+id/txtSearchDetReply"
+                android:drawableLeft="@drawable/ic_comment"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearchDetRegister"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="-1dp"
+        android:text="목적지 등록"
+        android:textColor="@color/common_button_text_color"
+        android:background="@drawable/border_rectangle_blue_button"
+        android:layout_alignBottom="@+id/scrollView" />
+</RelativeLayout>

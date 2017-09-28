@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/border_plan_sts">
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewPlanSts"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Icon" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlanStsTitle"
+        android:layout_toRightOf="@+id/imageViewPlanSts"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlanStsDesc"
+        android:layout_below="@+id/txtPlanStsTitle"
+        android:textColor="@android:color/darker_gray"
+        android:layout_toRightOf="@+id/imageViewPlanSts"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        />
+</RelativeLayout>

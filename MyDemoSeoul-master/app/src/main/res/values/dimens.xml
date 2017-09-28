@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">1dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_new_vertical_margin">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <!-- SearchDet Activity-->
+    <dimen name="search_det_linear_padding_top_bottom">-10dp</dimen>
+    <dimen name="search_det_linear_padding_left_right">20dp</dimen>
+    <dimen name="search_det_detail_content_width">100dp</dimen>
+
+    <!-- PlanSts Activity -->
+    <dimen name="plan_sts_linear_padding_top">10dp</dimen>
+    <dimen name="plan_sts_linear_padding_bottom">-10dp</dimen>
+    <dimen name="plan_sts_linear_padding_left_right">20dp</dimen>
+    <dimen name="plan_sts_content_width">100dp</dimen>
+
+    <!-- ShareReg Activity -->
+    <dimen name="share_reg_linear_padding_top_bottom">-10dp</dimen>
+    <dimen name="share_reg_linear_padding_left_right">20dp</dimen>
+    <dimen name="share_reg_detail_content_width">50dp</dimen>
+
+
+</resources>

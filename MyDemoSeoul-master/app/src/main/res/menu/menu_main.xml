@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jjw.mydemo.Main3Activity">
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="홈으로"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_signin"
+        android:orderInCategory="100"
+        android:title="로그인"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_signout"
+        android:orderInCategory="100"
+        android:title="로그아웃"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_myplan"
+        android:orderInCategory="100"
+        android:title="나의여행"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="어플에 대하여...."
+        app:showAsAction="never" />
+</menu>

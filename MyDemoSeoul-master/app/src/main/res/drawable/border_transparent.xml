@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 투명한 배경을 만든다..-->
+    <solid  android:color="#00ffffff" />
+    <stroke
+        android:width="1dip"
+        android:color="#00ffffff" />
+</shape>

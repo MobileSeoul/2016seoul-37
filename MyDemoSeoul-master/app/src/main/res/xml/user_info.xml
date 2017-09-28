@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserInfo>
+    <User>
+        <Id>test</Id>
+        <Password>test</Password>
+        <Email>test@gmail.com</Email>
+        <PlanPlaceList>
+            <Place>
+                <Name>남산</Name>
+            </Place>
+            <Place>
+                <Name>전쟁기념관</Name>
+            </Place>
+        </PlanPlaceList>
+    </User>
+
+</UserInfo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<placelist>
+    <place>
+        <name>숭례문</name>
+        <intro>숭례문은 조선의 수도인 한양의 4대문 중의 하나로 남쪽의 대문</intro>
+        <description>숭례문은 조선의 수도인 한양의 4대문 중의 하나로 남쪽의 대문이다. 흔히 남대문이라고도 부르는데, 이는 일제 강점기 시절에 일본이 붙인 명칭이 아니라 조선 초기부터 불린 이름이다. 서울 4대문 및 보신각의 이름은 오행사상을 따라 지어졌는데, 이런 명칭은 인, 의, 례, 지, 신의 5덕을 표현한 것이다.</description>
+        <lat>37.560922</lat>
+        <lon>126.975431</lon>
+        <rate>4</rate>
+        <imgSrc>@drawable/sungryemoon</imgSrc>
+    </place>
+    <place>
+        <name>남산</name>
+        <intro>남산은 서울특별시 중구와 용산구에 걸쳐있는 산</intro>
+        <description>남산은 서울특별시 중구와 용산구에 걸쳐있는 산이다. 높이는 해발 270.85m로서 서울의 중심부에 위치하여 서울의 상징이 되기도 한다. 정상에는 N서울타워가 있으며, 그 부근까지는 케이블카가 설치되어 있으며, 남산 1·2·3호 터널이 뚫려 있다</description>
+        <lat>37.555696</lat>
+        <lon>126.981141</lon>
+        <rate>4</rate>
+        <imgSrc>@drawable/namsan</imgSrc>
+    </place>
+    <place>
+        <name>경복궁</name>
+        <intro>서울 세종로에 있는 조선 왕조의 법궁</intro>
+        <description>경복궁은 대한민국 서울 세종로에 있는 조선 왕조의 법궁이다. 1395년에 창건하였다. ‘경복’은 시경에 나오는 말로 왕과 그 자손, 온 백성들이 태평성대의 큰 복을 누리기를 축원한다는 의미이다. 풍수지리적으로도 백악산을 뒤로하고 좌우에는 낙산과 인왕산으로 둘러싸여 있어 길지의 요건을 갖추고 있다. 1592년, 임진왜란으로 인해 불탄 이후 그 임무를 창덕궁에 넘겨주었다가 1865년에 흥선대원군의 명으로 중건되었다.</description>
+        <lat>37.5805000</lat>
+        <lon>126.9769000</lon>
+        <rate>4</rate>
+        <imgSrc>@drawable/gyungbokgoong</imgSrc>
+    </place>
+    <place>
+        <name>전쟁기념관</name>
+        <intro>대한민국을 지켜온 항쟁과 전쟁에 대한 기록을 모으고 보존하는 곳</intro>
+        <description>전쟁기념관은 대한민국 서울특별시 용산구 이태원로 29 에 위치한 기념관으로, 대한민국을 지켜온 항쟁과 전쟁에 대한 기록을 모으고 보존하는 곳이다. 전쟁에 대한 교훈을 통해 전쟁을 예방하고, 평화적 통일을 목적으로 한다. 1990년 9월 28일에 기공식이 있었다. 처음 건립된 때는 1993년 12월이며, 개관한 때는 1994년 6월 10일이다.</description>
+        <lat>37.536935</lat>
+        <lon>126.977038</lon>
+        <rate>4</rate>
+        <imgSrc>@drawable/warmemo</imgSrc>
+    </place>
+</placelist>
+

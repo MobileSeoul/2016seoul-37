@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFFFF"
+    tools:context="com.example.jjw.mydemo.ShareRegActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/verticalLinearLayout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <fragment
+                    android:id="@+id/mapShareReg"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/mapShareReg"
+                android:id="@+id/layoutShareReg1"
+                android:background="@drawable/xml_border"
+                android:layout_marginTop="@dimen/share_reg_linear_padding_top_bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/share_reg_linear_padding_top_bottom">
+
+
+                <TextView
+                    android:layout_width="@dimen/share_reg_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtShareRegTitle"
+                    android:text="위치"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center" />
+
+                <EditText
+                    android:id="@+id/txtShareRegInputCurrent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="start"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:textSize="10dp"
+                    android:textColor="#FFFF0000"
+                    android:editable="false"
+                    android:background="@drawable/border_current_position" />
+                    <EditText
+                        android:id="@+id/txtShareRegInput"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="198dp"
+                        android:layout_height="40dp"
+                        android:ellipsize="start"
+                        android:gravity="center"
+                        android:hint="주소를 입력하세요."
+                        android:singleLine="true"
+                        android:background="@drawable/border_transparent"
+                        android:layout_weight="1" />
+                    <Button
+                        android:layout_width="49dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnShareRegFindAddress"
+                        android:drawableRight="@android:drawable/ic_menu_search" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <!-- 코드 분류 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutShareReg2"
+                android:background="@drawable/xml_border"
+                android:layout_marginTop="@dimen/share_reg_linear_padding_top_bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/share_reg_linear_padding_top_bottom">
+
+                <TextView
+                    android:layout_width="@dimen/share_reg_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/txtShareRegCodName"
+                    android:text="분류"
+                    android:layout_gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/spinnerShareRegCodeName"
+                    android:background="@drawable/xml_border"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <!-- 시설명 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layoutShareReg3"
+                android:background="@drawable/xml_border"
+                android:layout_marginTop="@dimen/share_reg_linear_padding_top_bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/share_reg_linear_padding_top_bottom">
+                <TextView
+                    android:layout_width="@dimen/share_reg_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtShareRegFacName"
+                    android:text="명소명"
+                    android:layout_marginLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/inputShareRegFacName"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ellipsize="start"
+                    android:gravity="center"
+                    android:hint="명소명을 입력해주세요.."
+                    android:singleLine="true"
+                    android:background="@drawable/border_transparent"
+
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <!-- 설명 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutShareReg4"
+                android:background="@drawable/xml_border"
+                android:layout_marginTop="@dimen/share_reg_linear_padding_top_bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/share_reg_linear_padding_top_bottom"
+                >
+
+
+                <TextView
+                    android:layout_width="@dimen/share_reg_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtShareRegFacDesc"
+                    android:text="설명"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/inputShareRegFacDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:layout_above="@+id/searchView"
+                    android:layout_centerHorizontal="true"
+                    android:hint="명소에 대하여 간단히 설명해주세요.."
+                    android:layout_marginBottom="67dp"
+                    android:background="@drawable/xml_border"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layoutShareReg5"
+                android:layout_marginTop="@dimen/share_reg_linear_padding_top_bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/share_reg_linear_padding_top_bottom">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="사진찍기"
+                    android:id="@+id/Bcapture"
+                    android:onClick="launchCamera"
+                    android:minHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@android:drawable/ic_menu_camera"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_border"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="사진가져오기"
+                    android:id="@+id/btnShareRegGallery"
+                    android:minHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@android:drawable/ic_menu_gallery"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_border"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:id="@+id/imgShareRegCamera"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등록하기"
+                android:id="@+id/btnShareRegRegistration"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/border_rectangle_blue_button"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFFFF"
+    tools:context="com.example.jjw.mydemo.PlanStsActivity">
+
+<!--    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlanStsListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="출발지"
+        android:layout_above="@id/recycler_viewPlanSts"/>-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/plan_sts_linear_padding_top"
+                android:layout_marginBottom="@dimen/plan_sts_linear_padding_bottom"
+                android:layout_marginLeft="@dimen/plan_sts_linear_padding_left_right"
+                android:layout_marginRight="@dimen/plan_sts_linear_padding_left_right">
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="출발지"
+                    android:id="@+id/txtPlanStsDepart"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtPlanStsDepartContent" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_gravity="center_horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_viewPlanSts"
+                android:scrollbars="vertical">
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/plan_sts_linear_padding_bottom"
+                android:layout_marginBottom="@dimen/plan_sts_linear_padding_top"
+                android:layout_marginLeft="@dimen/plan_sts_linear_padding_left_right"
+                android:layout_marginRight="@dimen/plan_sts_linear_padding_left_right">
+                <TextView
+                    android:layout_width="@dimen/search_det_detail_content_width"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="도착지"
+                    android:id="@+id/txtPlanStsDest"
+                    android:textColor="@color/desc_title" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtPlanStsDestContent" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

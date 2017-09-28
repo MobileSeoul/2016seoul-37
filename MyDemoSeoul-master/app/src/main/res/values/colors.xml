@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+
+    <!--SearchRst -->
+<!--    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#F44336</color>-->
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#E040FB</color>
+
+    <!-- SearchDet -->
+    <color name="desc_title">#000000</color>
+
+    <!--SearchRst -->
+    <color name="list_seclect">#FF00E0E0</color>
+
+    <!--Main-->
+    <color name="main_desc">#FFFFFFE0</color>
+
+    <!--PlanSts-->
+    <color name="plan_sts_list">#FFE0E0E0</color>
+
+    <color name="common_button_text_color">#FFFFFFE0</color>
+</resources>

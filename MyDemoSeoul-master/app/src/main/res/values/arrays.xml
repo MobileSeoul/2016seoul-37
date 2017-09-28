@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="codename">
+        <item>도서관</item>
+        <item>공연장</item>
+        <item>문화원</item>
+        <item>미술관</item>
+        <item>박물관</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="mapdistance">
+        <item>300m</item>
+        <item>500m</item>
+        <item>1000m</item>
+        <item>1500m</item>
+        <item>2000m</item>
+    </string-array>
+
+</resources>
